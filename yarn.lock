@@ -10968,9 +10968,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"react-native-turbo-image@workspace:.":
+"react-native-turbo-image-prefetch@workspace:.":
   version: 0.0.0-use.local
-  resolution: "react-native-turbo-image@workspace:."
+  resolution: "react-native-turbo-image-prefetch@workspace:."
   dependencies:
     "@commitlint/config-conventional": ^17.0.2
     "@evilmartians/lefthook": ^1.5.0

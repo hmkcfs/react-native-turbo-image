@@ -8,9 +8,9 @@
   </a>
 </div>
 <div align="center">
-  <img src="https://github.com/duguyihou/react-native-turbo-image/blob/main/example/assets/ios.gif" width="200" />
+  <img src="https://github.com/hmkcfs/react-native-turbo-image/blob/main/example/assets/ios.gif" width="200" />
   
-  > You can find more examples in [example folder](https://github.com/duguyihou/react-native-turbo-image/tree/main/example)
+  > You can find more examples in [example folder](https://github.com/hmkcfs/react-native-turbo-image/tree/main/example)
 </div>
 
 
@@ -28,7 +28,7 @@ Performant image component for React Native. Powered by [Nuke](https://github.co
 ## Installation
 
 ```sh
-npm install react-native-turbo-image
+npm install react-native-turbo-image-prefetch
 
 cd ios && pod install
 ```
@@ -36,7 +36,7 @@ cd ios && pod install
 ## Usage
 
 ```ts
-import TurboImage from 'react-native-turbo-image';
+import TurboImage from 'react-native-turbo-image-prefetch';
 
 <TurboImage
   source={{ uri: "https://cloud.githubusercontent.com/assets/1567433/9781817/ecb16e82-57a0-11e5-9b43-6b4f52659997.jpg" }}
@@ -50,10 +50,10 @@ import TurboImage from 'react-native-turbo-image';
 
 | Name                        | Type                                                                                                  | Description                                                                                                                                                                                           | Default                 |
 | --------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| `source`                    | [`Source`](https://github.com/duguyihou/react-native-turbo-image?tab=readme-ov-file#source)           | (**Required**) an object containing a `uri` string                                                                                                                                                    | -                       |
+| `source`                    | [`Source`](https://github.com/hmkcfs/react-native-turbo-image?tab=readme-ov-file#source)           | (**Required**) an object containing a `uri` string                                                                                                                                                    | -                       |
 | `style`                     | `ImageStyle`                                                                                          | Styles to be applied to the image.                                                                                                                                                                    | -                       |
-| `placeholder`               | [`Placeholder`](https://github.com/duguyihou/react-native-turbo-image?tab=readme-ov-file#placeholder) | show placeholder while loading                                                                                                                                                                        | -                       |
-| `cachePolicy`               | [`CachePolicy`](https://github.com/duguyihou/react-native-turbo-image?tab=readme-ov-file#cachepolicy) | Determines how to cache the image                                                                                                                                                                     | urlCache                |
+| `placeholder`               | [`Placeholder`](https://github.com/hmkcfs/react-native-turbo-image?tab=readme-ov-file#placeholder) | show placeholder while loading                                                                                                                                                                        | -                       |
+| `cachePolicy`               | [`CachePolicy`](https://github.com/hmkcfs/react-native-turbo-image?tab=readme-ov-file#cachepolicy) | Determines how to cache the image                                                                                                                                                                     | urlCache                |
 | `resizeMode`                | `String`                                                                                              | Resize the image with one of the options: `contain`&nbsp;`cover`&nbsp;`stretch`&nbsp;`center`                                                                                                         | contain                 |
 | `indicator`                 | `object`                                                                                              | `style`: `medium`(default) or `large`.&nbsp; `color`: `number / ColorValue`                                                                                                                           | -                       |
 | `fadeDuration`              | `number`                                                                                              | The transition duration of the image. Note: To avoid flicking, it will be set to 0 when a placeholder is provided                                                                                     | 300(iOS) / 100(Android) |
@@ -120,7 +120,7 @@ await TurboImage.clearDiskCache();
 
 | thumbhash                                                                                                              | blurhash                                                                                                              | memoryCacheKey                                                                                                              |
 | ---------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| <img src="https://github.com/duguyihou/react-native-turbo-image/blob/main/example/assets/thumbhash.gif" width="150" /> | <img src="https://github.com/duguyihou/react-native-turbo-image/blob/main/example/assets/blurhash.gif" width="150" /> | <img src="https://github.com/duguyihou/react-native-turbo-image/blob/main/example/assets/memoryCacheKey.gif" width="150" /> |
+| <img src="https://github.com/hmkcfs/react-native-turbo-image/blob/main/example/assets/thumbhash.gif" width="150" /> | <img src="https://github.com/hmkcfs/react-native-turbo-image/blob/main/example/assets/blurhash.gif" width="150" /> | <img src="https://github.com/hmkcfs/react-native-turbo-image/blob/main/example/assets/memoryCacheKey.gif" width="150" /> |
 
 
 ### CachePolicy
@@ -137,4 +137,4 @@ See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the 
 
 ## License
 
-TurboImage is released under the [MIT](https://github.com/duguyihou/react-native-turbo-image?tab=MIT-1-ov-file) license. Some of the dependencies are licensed differently, with the Apache-2.0 license, for example.
+TurboImage is released under the [MIT](https://github.com/hmkcfs/react-native-turbo-image?tab=MIT-1-ov-file) license. Some of the dependencies are licensed differently, with the Apache-2.0 license, for example.
